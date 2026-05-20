@@ -40,10 +40,10 @@
     flex: 1;
 }
 .hero-right img{
-    width: 470px;
+    width: 480px;
     position: relative;
-    top: 20px;
     left: -10px;
+    margin-top: -50px;
 }
 @media(max-width:1280px){
     .hero-left{
@@ -63,7 +63,7 @@
         font-size: 16px;
     }
     .hero-right img{
-        width: 500px;
+        width: 450px;
     }
 }
 @media(max-width:1024px){
@@ -82,7 +82,9 @@
         font-size: 14px;
     }
     .hero-right img{
-        width: 450px;
+        width: 400px;
+        left: -20px;
+        margin-top: -20px;
     }
 }
 @media(max-width:800px){
@@ -101,7 +103,7 @@
         font-size: 12px;
     }
     .hero-right img{
-        width: 400px;
+        width: 390px;
     }
 }
 @media(max-width:500px){
