@@ -14,7 +14,7 @@ const Navbar = () => {
     menuRef.current.classList.toggle('nav-menu-visible');
     e.target.classList.toggle('open');
   }
-
+  
   return (
     <div className='navbar'>
         <h1>Driftwear</h1>
