@@ -17,7 +17,7 @@ const LoginSignup = () => {
   const login = async () =>{
     console.log("Login Function Executed",formData);
     let responseData;
-    await fetch('http://https://e-commerce-backend-wdp2.onrender.com/login',{
+    await fetch('https://e-commerce-backend-wdp2.onrender.com/login',{
       method:'POSt',
       headers:{
         Accept:'application/form-data',
@@ -39,7 +39,7 @@ const LoginSignup = () => {
   const signup = async () =>{
     console.log("Signup Function Executed",formData);
     let responseData;
-    await fetch('http://https://e-commerce-backend-wdp2.onrender.com/signup',{
+    await fetch('https://e-commerce-backend-wdp2.onrender.com/signup',{
       method:'POSt',
       headers:{
         Accept:'application/form-data',
