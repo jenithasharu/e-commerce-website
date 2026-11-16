@@ -18,7 +18,7 @@ const ShopContextProvider = (props)=>{
     useEffect(()=>{
         fetch('https://e-commerce-backend-wdp2.onrender.com/allproducts')
         .then((response)=>response.json())
-        .then((data)=>setAll_Product(data))
+        .then((data)=>setAll_Product(data.map(p=>({...p, image:p.image.replace("http://localhost:4000","https://e-commerce-backend-wdp2.onrender.com")}))))
 
         if(localStorage.getItem('auth-token')){
             fetch('https://e-commerce-backend-wdp2.onrender.com/getcart',{
