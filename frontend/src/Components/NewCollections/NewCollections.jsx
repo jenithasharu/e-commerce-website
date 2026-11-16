@@ -9,7 +9,7 @@ const NewCollections = () => {
   useEffect(()=>{
     fetch('https://e-commerce-backend-wdp2.onrender.com/newcollection')
     .then((response)=>response.json())
-    .then((data)=>setNew_collection(data));
+    .then((data)=>setNew_collection(data.map(p=>({...p, image:p.image.replace("http://localhost:4000","https://e-commerce-backend-wdp2.onrender.com")}))))
   },[])
   return (
     <div className="new-collections">
